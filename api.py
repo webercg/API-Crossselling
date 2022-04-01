@@ -8,8 +8,8 @@ from PIL import Image
 import streamlit.components.v1 as components
 import streamlit as st
 
-model = joblib.load('model.pkl')
-
+#model = joblib.load('model.pkl')
+model = joblib.load(open(os.path.join('model.pkl'),"rb"))
 
 
 st.set_page_config(page_title="Random Forest", page_icon="🌱")
